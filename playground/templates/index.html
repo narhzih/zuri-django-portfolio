@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I'm Olawale | Welcome to my portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'assets/css/style.css'%}" />
+    <link rel="icon" href="../static/assets/images/logo.svg" />
+  </head>
+  <body>
+    <header class="header" data-aos="fade-up">
+      <nav class="header__nav nav">
+        <div class="nav__logo">
+          <img src="../static/assets/images/logo.svg" alt="" class="nav__logo__img" />
+        </div>
+        <!--        <div class="nav__links">-->
+        <!--          <a href="#" class="nav__links__link active">Services</a>-->
+        <!--          <a href="#" class="nav__links__link">Works</a>-->
+        <!--          <a href="#" class="nav__links__link">Blog</a>-->
+        <!--        </div>-->
+      </nav>
+      <div class="header__content">
+        <div class="header__content__box header__content__box--1">
+          <h1 class="heading--intro">
+            Olawale <br />
+            Omosekeji.
+          </h1>
+          <div class="header__content__links">
+            <a
+              href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjQw4bavfXxAhURcBQKHeBeCYEQFjAAegQIAxAD&url=https%3A%2F%2Ftwitter.com%2Fsimply_symfony_%3Flang%3Den&usg=AOvVaw3Mn6XN6E9-kS9G6FY53kvG"
+              target="_blank"
+              class="header__content__links__link"
+            >
+              <svg>
+                <use xlink:href="{% static 'assets/images/icons.svg' %}#icon-twitter"></use>
+              </svg>
+            </a>
+            <a
+              href="mailto:omosekejiolawale@gmail.com"
+              class="header__content__links__link"
+            >
+              <svg>
+                <use xlink:href="{% static 'assets/images/icons.svg' %}#icon-mail4"></use>
+              </svg>
+            </a>
+            <a
+              href="https://github.com/narhzih"
+              class="header__content__links__link"
+            >
+              <svg>
+                <use xlink:href="{% static 'assets/images/icons.svg' %}#icon-github"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="header__content__box header__content__box--2">
+          <h4 class="heading--sub">Introduction</h4>
+          <h2 class="heading--main">
+            Fullstack Software engineer and Mentor, based in Nigeria.
+          </h2>
+          <p>
+            Hi, my name is Olawale, a CS undergraduate of Obafemi Awolowo
+            University, it's nice to meet you. I am a software engineer whose
+            passion is to solve problems with what i know. I'm quietly
+            confident, naturally curious, and perpetually working on improving
+            my skills one pattern at a time.
+          </p>
+          <a href="#contact" class="button button--link"> Reach Out &rarr;</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="about">
+      <div
+        class="about__box about__box--1"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+      >
+        <h4 class="heading--sub">About</h4>
+        <h2 class="heading--main">
+          Professionally I am a fullstack web developer.
+        </h2>
+        <p>
+          Since beginning my career as a Software engineer for the past 4 years,
+          I have worked with start ups and agencies to help bring their ideas
+          and dreams to life.
+        </p>
+
+        <a href="#portfolio" class="button button--link">
+          See my works &rarr;</a
+        >
+      </div>
+
+      <div
+        class="about__box about__box--2"
+        data-aos="fade-left"
+        data-aos-duration="1500"
+      >
+        <h2 class="heading--main">
+          "Living, learning, & leveling up one day at a time" is the school of
+          thought I subscribe to.
+        </h2>
+        <p>
+          Other than that, I love to dabble with anything related to software
+          engineering, networking, blockchain development and some interesting
+          fields of Computer science. Outside work, I tinker with C, C++ and
+          Python and I love working with those technologies but within work,
+          below are the things that I do.
+        </p>
+      </div>
+    </section>
+
+    <section class="skills">
+      <div class="skills__container">
+        <div class="skills__skill" data-aos="fade-up" data-aos-duration="1000">
+          <div class="skills__skill__box skills__skill__box--1">
+            <svg class="skills__skill__icon">
+              <use xlink:href="{% static 'assets/images/icons.svg' %}#icon-display"></use>
+            </svg>
+            <h2>
+              FrontEnd <br />
+              Developer
+            </h2>
+          </div>
+          <div class="skills__skill__box skills__skill__box--2">
+            <p>
+              I like to code things from scratch, and enjoy bringing ideas to
+              life in the browser.
+            </p>
+            <h4>Languages I speak</h4>
+            <p>HTML, CSS, SASS, Javascript, VueJs, NuxtJs.</p>
+          </div>
+        </div>
+        <div class="skills__skill" data-aos="fade-up" data-aos-duration="2000">
+          <div class="skills__skill__box skills__skill__box--1">
+            <svg class="skills__skill__icon">
+              <use xlink:href="{% static 'assets/images/icons.svg' %}#icon-data"></use>
+            </svg>
+            <h2>
+              BackEnd <br />
+              Developer
+            </h2>
+          </div>
+          <div class="skills__skill__box skills__skill__box--2">
+            <p>
+              I love to build and maintain the technology needed to power the
+              components which enable the user-facing side of the website to
+              exist
+            </p>
+            <h4>Languages I speak</h4>
+            <p>NodeJs, Express, Meteor, PHP, Slim, Laravel, SQL.</p>
+          </div>
+        </div>
+        <div class="skills__skill" data-aos="fade-up" data-aos-duration="3000">
+          <div class="skills__skill__box skills__skill__box--1">
+            <svg class="skills__skill__icon">
+              <use xlink:href="{% static 'assets/images/icons.svg' %}#icon-bulb"></use>
+            </svg>
+            <h2>Mentor</h2>
+          </div>
+          <div class="skills__skill__box skills__skill__box--2">
+            <p>
+              There is nothing that i value more than passing down what I know
+              to people that are interested in listening.
+            </p>
+            <h4>Mentorship Areas</h4>
+            <p>Web development, Data Science and Engineering</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <img
+        src="../static/assets/images/ls.png"
+        alt=""
+        class="portfolio__img portfolio__img--1"
+      />
+      <img
+        src="../static/assets/images/rs.png"
+        alt=""
+        class="portfolio__img portfolio__img--2"
+      />
+      <div class="portfolio__header">
+        <h4 class="heading--sub">Work History</h4>
+        <h2 class="heading--main">
+          Below are some of the organizations and start-ups I've worked with
+          over the years
+        </h2>
+      </div>
+      <div class="portfolio__content">
+        <div
+          data-aos="fade-up-right"
+          data-aos-duration="2000"
+          class="portfolio__content__box portfolio__content__box--1"
+        >
+          <div
+            class="portfolio__content__box__bg portfolio__content__box__bg--1"
+          ></div>
+          <div class="portfolio__content__box__info">
+            <h2>
+              Hendray <br />
+              Finvest
+            </h2>
+            <p>
+              is a group of innovative and unique forex traders based in Africa;
+              they evangelize the concepts of being participants in the global
+              financial market and provide educational resources to interested
+              individuals.
+            </p>
+            <a
+              href="https://hendrayfinvest.netlify.com"
+              target="_blank"
+              class="button"
+              >Visit Site &rarr;</a
+            >
+          </div>
+        </div>
+        <div
+          data-aos="fade-up-left"
+          data-aos-duration="2000"
+          class="
+            portfolio__content__box
+            portfolio__content__box--2
+            portfolio__content__box--right
+          "
+        >
+          <div
+            class="portfolio__content__box__bg portfolio__content__box__bg--2"
+          ></div>
+          <div class="portfolio__content__box__info">
+            <h2>
+              Tcode <br />
+              Investment Scheme
+            </h2>
+            <p>
+              are committed to enriching society by delivering superior
+              investment services.
+            </p>
+            <a
+              href="https://www.tcodeinvestment.com"
+              target="_blank"
+              class="button"
+              >Visit Site &rarr;</a
+            >
+          </div>
+        </div>
+        <div
+          data-aos="fade-up-right"
+          data-aos-duration="2000"
+          class="portfolio__content__box portfolio__content__box--3"
+        >
+          <div
+            class="portfolio__content__box__bg portfolio__content__box__bg--3"
+          ></div>
+          <div class="portfolio__content__box__info">
+            <h2>Scriptify247</h2>
+            <p>
+              is a writing agency that provides various writing services online.
+              They also link people in need of writers with writers in need of
+              jobs. It was shutdown in 2020 during the Covid-19 pandemic.
+            </p>
+            <a href="#" class="button">Not available &#10005;</a>
+          </div>
+        </div>
+        <div
+          data-aos="fade-up-left"
+          data-aos-duration="2000"
+          class="
+            portfolio__content__box
+            portfolio__content__box--4
+            portfolio__content__box--right
+          "
+        >
+          <div
+            class="portfolio__content__box__bg portfolio__content__box__bg--4"
+          ></div>
+          <div class="portfolio__content__box__info">
+            <h2>Trader's Base</h2>
+            <p>
+              mentor individuals and organisations whilst providing competent
+              educational platform for learning the methods of trading and
+              winning successfully in the cryptocurrency world. (To be fully
+              launched soon)
+            </p>
+            <a
+              href="https://tradersbase.netlify.app"
+              target="_blank"
+              class="button"
+              >Visit Site &rarr;</a
+            >
+          </div>
+        </div>
+        <div
+          data-aos="fade-up-right"
+          data-aos-duration="2000"
+          class="portfolio__content__box portfolio__content__box--5"
+        >
+          <div
+            class="portfolio__content__box__bg portfolio__content__box__bg--5"
+          ></div>
+          <div class="portfolio__content__box__info">
+            <h2>
+              Dancrypt <br />
+              Global Enterprise
+            </h2>
+            <p>
+              is a company which cares for and about its investor by building
+              the foresight envisioned by investors.
+            </p>
+            <a
+              href="https://www.dcryptglobal.com/"
+              target="_blank"
+              class="button"
+              >Visit Site &rarr;</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__content">
+        <div class="contact__box contact__box--1">
+          <h2 class="heading--main">Want to hire me?</h2>
+          <p>
+            I am Knowledgeable of backend and frontend development requirements.
+            Handles any part of process with ease. Collaborative team player
+            with excellent technical abilities and I believe that's what your
+            organization needs. I would love to be part of your organization and
+            bring fresh ideas to improve what you already have.
+          </p>
+          <br />
+          <p>
+            I am available for full-time Backend / Fullstack roles. <br />
+            you can send a message to my email address below
+          </p>
+          <br />
+
+          <a href="mailto:omosekejiolawale@gmail.com" class="button">
+            omosekejiolawale@gmail.com
+          </a>
+        </div>
+        <div class="contact__box contact__box--2">
+          <h2 class="heading--main">
+            Got a project? <br />
+            Let's talk
+          </h2>
+          <form action="#" class="form contact__form">
+            <div class="form__group">
+              <label for="name"></label>
+              <input
+                type="text"
+                class="form__input"
+                id="name"
+                placeholder="Tell me your name"
+              />
+            </div>
+
+            <div class="form__group">
+              <label for="email"></label>
+              <input
+                type="email"
+                class="form__input"
+                id="email"
+                placeholder="Your fancy email"
+              />
+            </div>
+
+            <div class="form__group">
+              <label for="message"></label>
+              <textarea
+                rows="5"
+                cols="30"
+                class="form__input form__input--textarea"
+                id="message"
+                placeholder="Tell me about your project"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="form__button button">
+              Send &rarr;
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer data-aos="fade-up" data-aos-duration="2000" class="footer">
+      <div class="footer__content">
+        <img
+          class="footer__content__logo"
+          src="../static/assets/images/logo.png"
+          alt=""
+        />
+        <p><b>Thanks for scrolling.</b> That's all guys.</p>
+        <p>&copy; Olawale Omosekeji (Narhzih)</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
